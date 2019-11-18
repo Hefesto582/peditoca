@@ -15,33 +15,28 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+  
+  <nav>
+    <div class="nav-wrapper primary-color">
       <div class="container">
-        <a class="navbar-brand" href="/pedidos">Peditoca</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/pedidos/new">Novo Pedido</a>
-            </li>
-          </ul>
-        </div>
+      <a href="/pedidos" class="brand-logo">Peditoca</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/pedidos/new">Novo Pedido</a></li>
+        <li><a href="/pratos">Pratos</a></li>
+      </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+
     <div class="container">
       <%= yield %>
     </div>
   </body>
 
-  <footer class="primary-color">
-    <p>
+  
+  <footer class="footer primary-color">
+    <p class="container">
       Todos os direitos reservados © <%= Time.now.year %>
     </p>
   </footer>

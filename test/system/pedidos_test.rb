@@ -14,8 +14,8 @@ class PedidosTest < ApplicationSystemTestCase
     visit pedidos_url
     click_on "New Pedido"
 
+    fill_in "Codigo", with: @pedido.codigo
     fill_in "Descricao", with: @pedido.descricao
-    fill_in "Garcon", with: @pedido.garcon
     fill_in "Mesa", with: @pedido.mesa
     click_on "Create Pedido"
 
@@ -27,8 +27,8 @@ class PedidosTest < ApplicationSystemTestCase
     visit pedidos_url
     click_on "Edit", match: :first
 
+    fill_in "Codigo", with: @pedido.codigo
     fill_in "Descricao", with: @pedido.descricao
-    fill_in "Garcon", with: @pedido.garcon
     fill_in "Mesa", with: @pedido.mesa
     click_on "Update Pedido"
 

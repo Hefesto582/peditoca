@@ -3,6 +3,15 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+// Inclua nas versões quando rails >= 5.1
+//= require jquery
+//= require jquery_ujs
+ 
+// Sempre inclua
+//= require turbolinks
+//= require materialize-sprockets
+//= require_tree .
+
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()

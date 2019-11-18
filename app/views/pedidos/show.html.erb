@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Codigo:</strong>
+  <%= @pedido.codigo %>
+</p>
+
+<p>
   <strong>Mesa:</strong>
   <%= @pedido.mesa %>
 </p>
@@ -8,11 +13,6 @@
 <p>
   <strong>Descricao:</strong>
   <%= @pedido.descricao %>
-</p>
-
-<p>
-  <strong>Garcon:</strong>
-  <%= @pedido.garcon %>
 </p>
 
 <%= link_to 'Edit', edit_pedido_path(@pedido) %> |

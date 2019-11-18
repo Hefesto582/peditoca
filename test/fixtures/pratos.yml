@@ -2,10 +2,10 @@
 
 one:
   codigo: 1
-  mesa: 1
   descricao: MyString
+  ingredientes: MyString
 
 two:
   codigo: 1
-  mesa: 1
   descricao: MyString
+  ingredientes: MyString

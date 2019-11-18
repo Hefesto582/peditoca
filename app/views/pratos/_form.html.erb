@@ -1,10 +1,10 @@
-<%= form_with(model: pedido, local: true) do |form| %>
-  <% if pedido.errors.any? %>
+<%= form_with(model: prato, local: true) do |form| %>
+  <% if prato.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(pedido.errors.count, "error") %> prohibited this pedido from being saved:</h2>
+      <h2><%= pluralize(prato.errors.count, "error") %> prohibited this prato from being saved:</h2>
 
       <ul>
-        <% pedido.errors.full_messages.each do |message| %>
+        <% prato.errors.full_messages.each do |message| %>
           <li><%= message %></li>
         <% end %>
       </ul>
@@ -17,13 +17,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :mesa %>
-    <%= form.number_field :mesa %>
+    <%= form.label :descricao %>
+    <%= form.text_field :descricao %>
   </div>
 
   <div class="field">
-    <%= form.label :descricao %>
-    <%= form.text_field :descricao %>
+    <%= form.label :ingredientes %>
+    <%= form.text_field :ingredientes %>
   </div>
 
   <div class="actions btn waves-effect waves-light submit-color">

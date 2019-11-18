@@ -17,7 +17,7 @@ class PedidosControllerTest < ActionDispatch::IntegrationTest
 
   test "should create pedido" do
     assert_difference('Pedido.count') do
-      post pedidos_url, params: { pedido: { descricao: @pedido.descricao, garcon: @pedido.garcon, mesa: @pedido.mesa } }
+      post pedidos_url, params: { pedido: { codigo: @pedido.codigo, descricao: @pedido.descricao, mesa: @pedido.mesa } }
     end
 
     assert_redirected_to pedido_url(Pedido.last)
@@ -34,7 +34,7 @@ class PedidosControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update pedido" do
-    patch pedido_url(@pedido), params: { pedido: { descricao: @pedido.descricao, garcon: @pedido.garcon, mesa: @pedido.mesa } }
+    patch pedido_url(@pedido), params: { pedido: { codigo: @pedido.codigo, descricao: @pedido.descricao, mesa: @pedido.mesa } }
     assert_redirected_to pedido_url(@pedido)
   end
 
