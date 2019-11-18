@@ -1,0 +1,33 @@
+@import "materialize";
+@import "material_icons";
+
+.primary-color{
+    background-color: coral;
+}
+
+.submit-color{
+    background-color: rgb(145, 255, 0);
+}
+
+.danger-color{
+    background-color:rgb(255, 8, 0) ;
+}
+
+.footer{
+    p{
+        color: white;
+        padding-top: 20px;
+    }
+    height: 64px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+div.actions{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    input{
+        color:white;
+    }
+}
