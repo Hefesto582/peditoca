@@ -15,5 +15,5 @@
   <%= @prato.ingredientes %>
 </p>
 
-<%= link_to 'Edit', edit_prato_path(@prato) %> |
-<%= link_to 'Back', pratos_path %>
+<%= link_to 'Editar', edit_prato_path(@prato), {:class => 'btn waves-effect waves-light action-color margin-right-button'} %>
+<%= link_to 'Voltar', pratos_path, {:class => 'btn waves-effect waves-light danger-color'} %>
