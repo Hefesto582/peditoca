@@ -15,5 +15,5 @@
   <%= @pedido.descricao %>
 </p>
 
-<%= link_to 'Edit', edit_pedido_path(@pedido) %> |
-<%= link_to 'Back', pedidos_path %>
+<%= link_to 'Editar', edit_pedido_path(@pedido), {:class => 'btn waves-effect waves-light action-color margin-right-button'} %> 
+<%= link_to 'Voltar', pedidos_path, {:class => 'btn waves-effect waves-light danger-color'} %>

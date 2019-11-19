@@ -1,6 +1,6 @@
-<h1>Editing Prato</h1>
+<h1>Editando Prato</h1>
 
 <%= render 'form', prato: @prato %>
 
-<%= link_to 'Show', @prato %> |
-<%= link_to 'Back', pratos_path %>
+<%= link_to 'Detalhes', @prato, {:class => 'btn waves-effect waves-light action-color margin-right-button'} %> 
+<%= link_to 'Voltar', pratos_path, {:class => 'btn waves-effect waves-light danger-color'} %>
